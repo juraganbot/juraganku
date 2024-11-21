@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 });
 
 // Endpoint untuk mengambil data pengguna berdasarkan userId
-app.get('/api/users/:userId', async (req, res) => {
+app.get('/api/:userId', async (req, res) => {
     const userId = req.params.userId;
 
     try {
